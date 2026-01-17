@@ -9,8 +9,12 @@ clean:
 
 clean-model:
 	rm -rf models
-train: clean-model
+train-keras:
 	mkdir -p target
 	cd notebooks && papermill 02_model_fitting_tensorflow_keras.ipynb ../target/02_model_fitting_tensorflow_keras_output.ipynb
+train-sklearn:
+	mkdir -p target
+	cd notebooks && papermill 02_model_fitting_sklearn.ipynb ../target/02_model_fitting_sklearn_output.ipynb
+tf-fit: clean clean-model prepare train-keras
 
-tf-fit: clean clean-model prepare train
+
