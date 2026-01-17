@@ -1,0 +1,24 @@
+{
+	"name": "Jupyter AI Development Dev Container",
+	"image": "siakhooi/devcontainer:jupyter-ai-0.1.0",
+	"remoteUser": "maui",
+	"containerUser": "maui",
+	"updateRemoteUserUID": true,
+	"features": {},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.makefile-tools",
+				"ms-python.python",
+				"ms-python.debugpy",
+				"ms-toolsai.jupyter-ai",
+				"ms-toolsai.jupyter"
+			]
+		}
+	},
+	"mounts": [
+	],
+	"remoteEnv": {
+		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+	}
+}
