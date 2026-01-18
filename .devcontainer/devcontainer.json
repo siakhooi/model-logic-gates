@@ -9,6 +9,7 @@
 		"vscode": {
 			"extensions": [
 				"ms-vscode.makefile-tools",
+				"mechatroner.rainbow-csv",
 				"ms-python.python",
 				"ms-python.debugpy",
 				"ms-toolsai.jupyter-ai",
