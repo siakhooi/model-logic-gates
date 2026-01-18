@@ -21,6 +21,8 @@ clean-inference:
 	mkdir -p target
 inference-keras:
 	cd notebooks && papermill 03_inference_keras.ipynb ../target/03_inference_keras.ipynb
+inference-sklearn:
+	cd notebooks && papermill 03_inference_sklearn.ipynb ../target/03_inference_sklearn.ipynb
 
 all-keras: clean-prepare clean-model prepare-pandas train-keras inference-keras
-all-sklearn: clean-prepare clean-model prepare-pandas train-sklearn
+all-sklearn: clean-prepare clean-model prepare-pandas train-sklearn inference-sklearn
