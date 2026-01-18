@@ -1,3 +1,4 @@
 data/processed
 target
 models
+inference/output
