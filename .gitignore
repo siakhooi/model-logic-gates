@@ -1,4 +1,4 @@
-data/processed
+data/prepared
 target
 models
 inference/output
